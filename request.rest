@@ -1,0 +1,29 @@
+GET http://127.0.0.1:3500/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWmFpbmFiIiwiaWF0IjoxNzI5MzcwNTQ1LCJleHAiOjE3MjkzNzA1NzB9.gwmt-AKW1fx7yQ71-KSI67Tp6f3XE1d1TFzbozs9Xas
+
+###
+
+POST http://127.0.0.1:8080/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWmFpbmFiIiwiaWF0IjoxNzI5MzcwNDk1fQ.8oX5TrLFmgHzOS8-_eJG-WxrE0gXbScqrqBkl9mtU5w"
+}
+
+###
+
+DELETE http://127.0.0.1:8080/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWmFpbmFiIiwiaWF0IjoxNzI5MzcwNDk1fQ.8oX5TrLFmgHzOS8-_eJG-WxrE0gXbScqrqBkl9mtU5w"
+}
+
+###
+
+POST http://127.0.0.1:8080/login
+Content-Type: application/json
+
+{
+    "username": "Zainab"
+}
